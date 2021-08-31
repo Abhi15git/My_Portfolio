@@ -1,6 +1,6 @@
 
 import './App.css';
-import Main from './components/body/main';
+import Main from './components/Body/Main';
 
 function App() {
   return (
