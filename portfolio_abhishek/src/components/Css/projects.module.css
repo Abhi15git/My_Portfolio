@@ -1,0 +1,23 @@
+.projectContainer {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  .head {
+    color: white;
+    font-size: 110px;
+    margin-top: 250px;
+  }
+  .projectContainer section{
+      width: 70%;
+      margin: 50vh auto 0 auto;
+  }
+  .project{
+      width: 50%;
+      text-align: left;
+  }
+  .project img{
+      width: 100%;
+  }
+  .project h2{
+      color: white;
+  }
