@@ -16,7 +16,7 @@ const Main = () => {
         <div className={styles.nav} >
             <div className={styles.box} onMouseOverCapture={()=>setHello("About")} onMouseOutCapture={()=>setHello("Hello.")}><p className={styles.p} onClick={()=>history.push("/about")} >{hello}</p></div>
             <div className={styles.box} onMouseOverCapture={()=>setMe("Projects")} onMouseOutCapture={()=>setMe("I am")}><p className={styles.p} onClick={()=>history.push("/projects")} >{me}</p></div>
-            <div className={styles.box} onMouseOverCapture={()=>setName("Contact")} onMouseOutCapture={()=>setName("Abhishek")}><p className={styles.p}>{name}</p></div>
+            <div className={styles.box} onMouseOverCapture={()=>setName("Contact")} onMouseOutCapture={()=>setName("Abhishek")}><p className={styles.p} onClick={()=>history.push("/contact")}>{name}</p></div>
         </div>
        <div className={styles.shade}>
        <div className={styles.imgBox}>

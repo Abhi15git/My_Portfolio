@@ -1,0 +1,62 @@
+.contactContainer {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  .head {
+    color: white;
+    font-size: 110px;
+    margin-top: 250px;
+  }
+  
+  .contact {
+    color: white;
+    width: 70%;
+    margin: 50vh auto 30vh auto;
+    text-align: left;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+  .contact section p {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 100;
+  }
+  .techStack {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .techStack div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .techStack i {
+    font-size: 60px;
+  }
+
+  .platforms div{
+      color: red;
+      margin: 10px;
+      cursor: pointer;
+      font-size: larger;
+  }
+  
+  .platforms div i{
+    color: white;
+    font-size: larger;
+}
+  .platforms div a{
+    color: red;
+    text-decoration: none;
+}
+.platforms div:hover{
+    transform: translateX(20px);
+    transition: transform .3s ease-in-out;
+}
