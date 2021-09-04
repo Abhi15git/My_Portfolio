@@ -19,7 +19,7 @@ export const About = () => {
           </p>
         </section>
         <section>
-            <a><h3 className={styles.resume}>My Resume <i class="fas fa-download"></i></h3></a>
+            <h3 className={styles.resume}>My Resume <i class="fas fa-download"></i></h3>
         </section>
         <section>
             <h1>Proficiencies</h1>
