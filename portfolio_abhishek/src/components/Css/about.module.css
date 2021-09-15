@@ -1,15 +1,15 @@
 .aboutContainer {
-  background: url('https://raw.githubusercontent.com/fireship-io/wavy-curvey-blobby-website/86203a00207c9aa686e4a96603d5887e5929a3e8/layer1.svg');
+  background: url("https://raw.githubusercontent.com/fireship-io/wavy-curvey-blobby-website/86203a00207c9aa686e4a96603d5887e5929a3e8/layer1.svg");
   background-size: cover;
   overflow-y: scroll;
   overflow-x: hidden;
   width: 100%;
   height: 100vh;
 }
-.aboutContainer::-webkit-scrollbar{
+.aboutContainer::-webkit-scrollbar {
   width: 2px;
 }
-*{
+* {
   overflow-x: hidden;
 }
 .head {
@@ -17,7 +17,7 @@
   font-size: 15vh;
   position: relative;
 }
-.subHead{
+.subHead {
   font-size: 10vh;
 }
 .about {
@@ -27,8 +27,6 @@
   text-align: left;
 }
 
-
-
 .about section p {
   font-size: 30px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -36,7 +34,7 @@
   font-weight: 100;
 }
 
-.techSection{
+.techSection {
   width: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -63,83 +61,80 @@
   font-size: 60px;
 }
 .techStack svg path {
-  filter: drop-shadow(10px 1px 0px #000000) drop-shadow(-1px 1px 0px #ffffff) drop-shadow(1px -1px 0px #ffffff) drop-shadow(-13px -13px 10px #ffffff)
+  filter: drop-shadow(10px 1px 0px #000000) drop-shadow(-1px 1px 0px #ffffff)
+    drop-shadow(1px -1px 0px #ffffff) drop-shadow(-13px -13px 10px #ffffff);
 }
 
-.blob{
+.blob {
   position: absolute;
   top: -40px;
   z-index: 2;
-  opacity: .5;
+  opacity: 0.5;
 }
 .resume {
   color: red;
   cursor: pointer;
 }
-.resume:hover{
-    animation: color 4s ease-out infinite;
+.resume:hover {
+  animation: color 4s ease-out infinite;
 }
-.waveSecondary{
+.waveSecondary {
   position: absolute;
   bottom: -3%;
   z-index: 20;
   width: 1400px;
   height: 140px;
-  background: url('../images/wave (6).svg');
+  background: url("../images/wave (6).svg");
   background-size: cover;
   opacity: 1;
   display: flex;
   flex-direction: column-reverse;
   justify-content: baseline;
 }
-.waveSecondary > div{
+.waveSecondary > div {
   width: 100%;
   height: 40px;
   background-color: #0f141a;
 }
 
-
 @keyframes color {
-    0%{
-      color: red;
-    }
-    25%{
-        color: yellow ;
-    }
-    50%{
-        color: green;
-    }
-    75%{
-        color: blue;
-    }
-    100%{
-        color: red;
-    }
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-  .waveSecondary{
+  .waveSecondary {
     bottom: 0%;
   }
-  
 }
 
-
-
 @media only screen and (max-width: 500px) {
-  .waveSecondary{
+  .waveSecondary {
     bottom: -1%;
   }
-  .head{
+  .head {
     font-size: 10vh;
   }
-  .subHead{
+  .subHead {
     font-size: 5vh;
   }
-  .about section p{
+  .about section p {
     font-size: 2vh;
   }
-  .techStack{
+  .techStack {
     grid-template-columns: auto;
   }
 }
