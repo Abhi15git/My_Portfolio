@@ -1,17 +1,21 @@
 .contactContainer {
-    overflow-y: scroll;
-    height: 100vh;
+  height: fit-content;
+    margin-bottom: 20vh;
+    overflow-x: hidden;
+  width: 100%;
   }
   .head {
     color: white;
-    font-size: 110px;
-    margin-top: 250px;
+    font-size: 15vh;
+    margin-top: 100px;
   }
-  
+  .subHead{
+    font-size: 10vh;
+  }
   .contact {
     color: white;
     width: 70%;
-    margin: 50vh auto 30vh auto;
+    margin: 10vh auto 5vh auto;
     text-align: left;
   }
   
@@ -25,27 +29,14 @@
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 100;
   }
-  .techStack {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .techStack div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .techStack i {
-    font-size: 60px;
-  }
+ 
 
   .platforms div{
       color: red;
       margin: 10px;
       cursor: pointer;
       font-size: larger;
+      transition: transform .3s ease-in-out;
   }
   
   .platforms div i{
@@ -58,5 +49,15 @@
 }
 .platforms div:hover{
     transform: translateX(20px);
-    transition: transform .3s ease-in-out;
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .head{
+    font-size: 7vh;
+  }
+  .subHead{
+    font-size: 5vh;
+  }
+ 
 }
