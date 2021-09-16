@@ -44,6 +44,27 @@ const Main = () => {
 
   useEffect(() => {
     wheelEvent();
+let touchstart ;
+    window.addEventListener(
+      "touchstart",
+      (event) => {
+        console.log(event.touches[0].clientY);
+        touchstart=event.touches[0].clientY
+      },
+      false
+    );
+    window.addEventListener(
+      "touchmove",
+      (event) => {
+        console.log(event.touches[0].clientY);
+        if(touchstart-event.touches[0].clientY>250){
+          setTranslate(1);
+        }
+        else if(touchstart-event.touches[0].clientY<-250)
+        setTranslate(0);
+      },
+      false
+    );
 
     init(textRef.current, {
       showCursor: true,
