@@ -45,22 +45,21 @@ const Main = () => {
 
   useEffect(() => {
     wheelEvent();
-let touchstart ;
+    let touchstart;
     window.addEventListener(
       "touchstart",
       (event) => {
-        touchstart=event.touches[0].clientY
+        touchstart = event.touches[0].clientY;
       },
       false
     );
     window.addEventListener(
       "touchmove",
       (event) => {
-        if(touchstart-event.touches[0].clientY>200){
+        if (touchstart - event.touches[0].clientY > 200) {
           setTranslate(1);
-        }
-        else if(touchstart-event.touches[0].clientY<-200)
-        setTranslate(0);
+        } else if (touchstart - event.touches[0].clientY < -200)
+          setTranslate(0);
       },
       false
     );
@@ -69,7 +68,7 @@ let touchstart ;
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Developer", "Web Developer","MERN Stack Developer"],
+      strings: ["Developer", "Web Developer", "MERN Stack Developer"],
     });
   }, []);
 
@@ -96,26 +95,29 @@ let touchstart ;
                 {hello}
               </p>
             </div>
-            <div
-              className={styles.box}
-            >
+            <div className={styles.box}>
               <p className={styles.p}>{me}</p>
             </div>
-            <div
-              className={styles.box}
-            >
+            <div className={styles.box}>
               <p className={styles.p}>{name}</p>
             </div>
           </div>
 
           <div className={styles.textResume}>
-          <h3 className={styles.ityped}>
-            <span ref={textRef}></span>
-          </h3>
-
-          <h3 className={styles.resume}>
-          <Button variant="contained" color="primary"> My Resume &nbsp;&nbsp; <i class="fas fa-download"></i></Button>
-          </h3>
+            <h3 className={styles.ityped}>
+              <span ref={textRef}></span>
+            </h3>
+            <br />
+            <h3 className={styles.resume}>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{ backgroundColor: "#aa281c" }}
+              >
+                {" "}
+                My Resume &nbsp;&nbsp; <i class="fas fa-download"></i>
+              </Button>
+            </h3>
           </div>
           <div className={styles.scrollbtn}>
             <TouchAppIcon />

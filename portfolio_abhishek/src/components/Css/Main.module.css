@@ -6,7 +6,7 @@
   text-align: left;
 }
 .p {
-  color: #dd3f31;
+  color: #aa281c;
   font-size: 10vh;
   padding: 0%;
   margin: -5px 0%;
@@ -103,12 +103,14 @@
 }
 @media only screen and (max-width: 500px) {
   .nav {
-    top: 10%;
+    top: 30%;
   }
   .p {
-    font-size: 7vh;
+    font-size: 5vh;
+    color: rgb(2, 9, 51);
   }
   .nav div:nth-child(1) .p {
+    color: white;
     font-size: 15vh;
   }
   .scrollbtn::after{
@@ -117,10 +119,22 @@
     margin-top: 0px;
   }
   .textResume{
-    left: 10%;
+    top: 55%;
+    left: 7%;
   }
   .scrollbtn{
     left: 40%;
+  }
+  
+  .profile img{
+    border-radius: 50% ;
+    border: 1.5px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: 1px solid white;
+    top: 6%;
+    right: 5%;
+    width: 60%;
   }
 }
 

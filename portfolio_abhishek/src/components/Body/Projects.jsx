@@ -13,39 +13,54 @@ const Projects = () => {
       <section>
       <h1 className={styles.subHead}>Projects</h1>
       </section>
+     
       <section className={styles.projectList}>
+
+
         <div className={styles.project}>
           <div className={styles.image}>
-            <div className={styles.links}>
+            
+
+            <img src={lenskart} alt="" />
+           
+          </div>
+          <div className={styles.description}>
+          <div className={styles.links}>
               <a>
-                <OpenInBrowserIcon fontSize="medium"/>
+                <OpenInBrowserIcon fontSize="large"/>
               </a>
             </div>
             <div className={styles.siteName}>
               <h3>Lenskart.com</h3>
             </div>
-
-            <img src={lenskart} alt="" />
-            <div className={styles.linksR}>
-              <a href="https://github.com/Abhi15git/LensKart">
-                <GitHubIcon fontSize="medium"/>
-               
-              </a>
-            </div>
-          </div>
-          <div className={styles.description}>
             <p>
               Founded in 2010, By an ex-Microsoft 'techie' with no money but
               truckloads of relentless passion to make a difference in this
               world, Lenskart is India's fastest growing eyewear business today.
             </p>
+            <div className={styles.linksR}>
+              <a href="https://github.com/Abhi15git/LensKart">
+                <GitHubIcon fontSize="large"/>
+               
+              </a>
+            </div>
           </div>
         </div>
+
+
+
         <div className={styles.project}>
          <div className={styles.image}>
-         <div className={styles.links}>
+         
+
+          <img src={instahyre} alt="" />
+         
+         </div>
+
+          <div className={styles.description}>
+          <div className={styles.links}>
             <a>
-            <OpenInBrowserIcon fontSize="medium"/>
+            <OpenInBrowserIcon fontSize="large"/>
             </a>
           </div>
           <div className={styles.siteName}>
@@ -53,16 +68,6 @@ const Projects = () => {
             <h3>Instahyre.com</h3>
             
           </div>
-
-          <img src={instahyre} alt="" />
-          <div className={styles.linksR}>
-            <a href="https://github.com/Abhi15git/Instahyre">
-              <GitHubIcon fontSize="medium" />
-            </a>
-          </div>
-         </div>
-
-          <div className={styles.description}>
               <p>
                 Instahyre is an advanced hiring platform based on artificial
                 intelligence, enabling recruiters to hire top talent
@@ -72,16 +77,29 @@ const Projects = () => {
                 curated list candidates ready for hire from its premium
                 database.
               </p>
+              <div className={styles.linksR}>
+            <a href="https://github.com/Abhi15git/Instahyre">
+              <GitHubIcon fontSize="large" />
+            </a>
+          </div>
             </div>
 
         </div>
         <div className={styles.project}>
          
          <div className={styles.image}>
-         <div className={styles.links}>
+         
+
+          <img src={coastal} alt="" />
+         
+
+         </div>
+
+          <div className={styles.description}>
+          <div className={styles.links}>
             <a>
               
-            <OpenInBrowserIcon fontSize="medium"/>
+            <OpenInBrowserIcon fontSize="large"/>
             </a>
           </div>
           <div className={styles.siteName}>
@@ -89,18 +107,6 @@ const Projects = () => {
             <h3>Coastal.com</h3>
            
           </div>
-
-          <img src={coastal} alt="" />
-          <div className={styles.linksR}>
-            <a href="https://github.com/Abhi15git/CoastalInn-Clone">
-              <GitHubIcon fontSize="medium" />
-              
-            </a>
-          </div>
-
-         </div>
-
-          <div className={styles.description}>
               <p>
                 Since 1994 Coastal Inns has represented quality, Atlantic
                 Canadian, independent hotels and motels to the travelling
@@ -109,6 +115,12 @@ const Projects = () => {
                 attentive service reflects the East Coast’s reputation for
                 down-home hospitality and friendliness.
               </p>
+              <div className={styles.linksR}>
+            <a href="https://github.com/Abhi15git/CoastalInn-Clone">
+              <GitHubIcon fontSize="large" />
+              
+            </a>
+          </div>
             </div>
 
         </div>

@@ -5,6 +5,8 @@ import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Contact from "./contact";
 import { Button } from "@material-ui/core";
+import GitHubCalendar from 'react-github-calendar';
+import ReactTooltip from 'react-tooltip';
 
 export const About = ({ prop, wheelEvent }) => {
   useEffect(() => {
@@ -280,6 +282,14 @@ export const About = ({ prop, wheelEvent }) => {
             </div>
           </div>
         </section>
+
+       <section>
+         <h1 className={styles.subHead}>GitHub Graph</h1>
+          <div>
+            <GitHubCalendar  username="abhi15git" children={<ReactTooltip html/>}/>
+          </div>
+       </section>
+
       </div>
 
       {/* <div className={styles.waveSecondary}>

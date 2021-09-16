@@ -3,10 +3,9 @@ import styled from "styled-components";
 import blackcat from "../images/blackcat.svg";
 
 const NavBox = styled.div`
-
-background-color: rgb(32,39,49);
+  background-color: rgb(32, 39, 49);
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   top: 5%;
   right: 0%;
   width: 500px;
@@ -21,26 +20,24 @@ background-color: rgb(32,39,49);
   overflow: visible;
   transform: translateX(0%);
   transition: transform 0.5s ease;
-       box-shadow:-2px 2px 5px rgb(113,93,242);
-  
-  &:hover :nth-child(2) span{
+  box-shadow: -2px 2px 5px rgb(113, 93, 242);
+
+  &:hover :nth-child(2) span {
     display: none;
   }
 
-  @media only screen and (max-width: 500px){
+  @media only screen and (max-width: 500px) {
     width: 350px;
-   
   }
-
 `;
 
 const Hover = styled.div`
-overflow: hidden;
+  overflow: hidden;
   height: 40px;
   border-radius: 50%;
   position: relative;
   background-color: yellow;
-  & > div{
+  & > div {
     overflow: hidden;
   }
   & img {
@@ -64,34 +61,39 @@ const Navlist = styled.div`
     text-decoration: none;
     color: white;
   }
-  & a:active{
-    color: rgb(113,93,242);
+  & a:active {
+    color: rgb(113, 93, 242);
   }
-  & div {
-    overflow: hidden;
+  & > div {
+    position: relative;
+  }
+
+  & a div {
+    position: absolute;
+    width: 0%;
+    z-index: -1;
+    height: 17px;
+    background-color: rgba(113, 93, 242, 0.5);
+    transform: translateY(100%);
+    transition: width 0.3s ease-in-out;
+  }
+
+  & > div:hover a div {
+    width: 100%;
   }
 
   & div a p {
-    transform: translateX(-28px);
-    transition: transform .3s ease;
+    padding: 0px 5px;
+    box-shadow: 0px 1px 3px rgb(113, 93, 242);
   }
-  & div a p:hover {
+  /* & div a p:hover {
     transform: translateX(0px);
-    box-shadow: 0px 1px 3px rgb(113,93,242);
-  }
-
-  @media only screen and (max-width: 500px){
     
-
-    & div a p {
-      transform: translateX(-20px);
-    font-size: small;
-  }
-  }
+  } */
 `;
 
 const Hoverme = styled.div`
-display: none;
+  display: none;
   position: absolute;
   top: 105%;
   transform: translateX(-20px);
@@ -101,58 +103,59 @@ display: none;
     color: #d4f37d;
   }
   @keyframes pop {
-  0% {
-    transform: translateY(0%);
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-40%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
   }
-  50% {
-    transform: translateY(-40%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
 `;
 
 const Navbar = ({ wheelEvent }) => {
   return (
     <div>
       <NavBox>
-      <Hover>
-        <div>
-        <img src={blackcat} alt="" />
-        </div>
-       
-      </Hover>
-      <Hoverme>
-        <div>
-          <span>Click <br /> me!</span>
-        </div>
-      </Hoverme>
-      <Navlist>
-        <div>
-          <a href="/">
-            <p onClick={wheelEvent}>nav.Home</p>
-          </a>
-        </div>
-        <div>
-          <a href="#about">
-            <p>nav.About</p>
-          </a>
-        </div>
-        <div>
-          <a href="#project">
-            <p>nav.Projects</p>
-          </a>
-        </div>
-        <div>
-          <a href="#contact">
-            <p>nav.Contact</p>
-          </a>
-        </div>
-      </Navlist>
-      
-    </NavBox>
-   
+        <Hover>
+          <div>
+            <img src={blackcat} alt="" />
+          </div>
+        </Hover>
+        <Hoverme>
+          <div>
+            <span>
+              Click <br /> me!
+            </span>
+          </div>
+        </Hoverme>
+        <Navlist>
+          <div>
+            <a href="/">
+              <div></div>
+              <p onClick={wheelEvent}>Home</p>
+            </a>
+          </div>
+          <div>
+            <a href="#about">
+              <div></div>
+              <p>About</p>
+            </a>
+          </div>
+          <div>
+            <a href="#project">
+              <div></div> <p>Projects</p>
+            </a>
+          </div>
+          <div>
+            <a href="#contact">
+              <div></div> <p>Contact</p>
+            </a>
+          </div>
+        </Navlist>
+      </NavBox>
     </div>
   );
 };
