@@ -46,7 +46,14 @@ const Main = () => {
   useEffect(() => {
     wheelEvent();
 
-    window.addEventListener('keydown',(event)=>{if(event.key==="Tab") event.preventDefault()},false)
+    window.addEventListener(
+      "keydown",
+      (event) => {
+        if (event.key === "Tab") event.preventDefault();
+      else if(event.key==="ArrowDown")setTranslate(1);
+      },
+      false
+    );
 
     let touchstart;
     window.addEventListener(

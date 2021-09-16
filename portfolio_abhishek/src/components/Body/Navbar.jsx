@@ -6,7 +6,7 @@ const NavBox = styled.div`
   background-color: rgb(32, 39, 49);
   position: absolute;
   z-index: 100;
-  top: 5%;
+  top: 0%;
   right: 0%;
   width: 500px;
   margin: 0%;
@@ -18,7 +18,6 @@ const NavBox = styled.div`
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   overflow: visible;
-  transform: translateX(0%);
   transition: transform 0.5s ease;
   box-shadow: -2px 2px 5px rgb(113, 93, 242);
 
