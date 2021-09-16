@@ -72,10 +72,7 @@ const Projects = () => {
                 Instahyre is an advanced hiring platform based on artificial
                 intelligence, enabling recruiters to hire top talent
                 effortlessly. Instead of having to waste hours on applying
-                filters to search for the right candidates and then checking if
-                they are interested, Instahyre provides the recruiter with a
-                curated list candidates ready for hire from its premium
-                database.
+                filters to search...
               </p>
               <div className={styles.linksR}>
             <a href="https://github.com/Abhi15git/Instahyre">
@@ -111,9 +108,7 @@ const Projects = () => {
                 Since 1994 Coastal Inns has represented quality, Atlantic
                 Canadian, independent hotels and motels to the travelling
                 public. Every Coastal Inn offers a comfortable place to stay, a
-                convenient location and great rates. Our warm welcome and
-                attentive service reflects the East Coast’s reputation for
-                down-home hospitality and friendliness.
+                convenient location and... 
               </p>
               <div className={styles.linksR}>
             <a href="https://github.com/Abhi15git/CoastalInn-Clone">

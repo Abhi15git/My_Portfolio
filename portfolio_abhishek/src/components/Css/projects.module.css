@@ -79,6 +79,7 @@
   background-color: rgba(0, 0, 0, 0.137);
 }
 .description p {
+  margin-top: 0%;
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -153,5 +154,12 @@
   }
   .subHead {
     font-size: 5vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  
+  .description p{
+    font-size: 1vh;
   }
 }
