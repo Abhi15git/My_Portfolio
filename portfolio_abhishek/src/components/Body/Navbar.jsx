@@ -37,6 +37,7 @@ const NavBox = styled.div`
 `;
 
 const Hover = styled.div`
+overflow: hidden;
   height: 40px;
   border-radius: 50%;
   position: relative;
