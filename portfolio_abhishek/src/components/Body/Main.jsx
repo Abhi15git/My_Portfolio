@@ -6,6 +6,7 @@ import { About } from "./About";
 import { throttle } from "lodash";
 import TouchAppIcon from "@material-ui/icons/TouchApp";
 import { init } from "ityped";
+import { Button } from "@material-ui/core";
 
 const Container = Styled.div`
 height:100vh;
@@ -48,7 +49,6 @@ let touchstart ;
     window.addEventListener(
       "touchstart",
       (event) => {
-        console.log(event.touches[0].clientY);
         touchstart=event.touches[0].clientY
       },
       false
@@ -56,7 +56,6 @@ let touchstart ;
     window.addEventListener(
       "touchmove",
       (event) => {
-        console.log(event.touches[0].clientY);
         if(touchstart-event.touches[0].clientY>200){
           setTranslate(1);
         }
@@ -70,7 +69,7 @@ let touchstart ;
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Full-Stack Web Developer", "MERN Full Stack Developer"],
+      strings: ["Developer", "Web Developer","MERN Stack Developer"],
     });
   }, []);
 
@@ -86,7 +85,7 @@ let touchstart ;
             <div
               className={styles.box}
               onMouseOverCapture={() => setHello("About")}
-              onMouseOutCapture={() => setHello("Hello.")}
+              onMouseOutCapture={() => setHello("Hello,")}
             >
               <p
                 className={styles.p}
@@ -99,27 +98,25 @@ let touchstart ;
             </div>
             <div
               className={styles.box}
-              onMouseOverCapture={() => setMe("Projects")}
-              onMouseOutCapture={() => setMe("I am")}
             >
               <p className={styles.p}>{me}</p>
             </div>
             <div
               className={styles.box}
-              onMouseOverCapture={() => setName("Contact")}
-              onMouseOutCapture={() => setName("Abhishek")}
             >
               <p className={styles.p}>{name}</p>
             </div>
           </div>
 
+          <div className={styles.textResume}>
           <h3 className={styles.ityped}>
             <span ref={textRef}></span>
           </h3>
 
           <h3 className={styles.resume}>
-            My Resume <i class="fas fa-download"></i>
+          <Button variant="contained" color="primary"> My Resume &nbsp;&nbsp; <i class="fas fa-download"></i></Button>
           </h3>
+          </div>
           <div className={styles.scrollbtn}>
             <TouchAppIcon />
             <h3>Scroll Up</h3>

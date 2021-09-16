@@ -1,7 +1,7 @@
 .nav {
   position: absolute;
   top: 30px;
-  left: 10%;
+  left: 15%;
   z-index: 100;
   text-align: left;
 }
@@ -19,7 +19,7 @@
 }
 .nav div {
   overflow: hidden;
-  width: 500px;
+  width: 400px;
 }
 
 .profile {
@@ -30,21 +30,17 @@
   position: relative;
 }
 
-.resume {
-  color: red;
-  cursor: pointer;
-  position: absolute;
-  right: 0%;
-}
-.resume:hover {
-  animation: color 4s ease-out infinite;
-}
+
+
 
 .scrollbtn {
+  background: linear-gradient(177deg, rgba(255,153,51,1) 0%, rgba(255, 255, 255, 0) 25%, rgba(19, 136, 8, 0) 100%);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
   color: white;
   position: absolute;
   bottom: 0%;
-  left: 40%;
+  left: 45%;
   z-index: 100;
   animation: pop 1s ease-out infinite;
 }
@@ -52,7 +48,7 @@
   position: absolute;
   bottom: 0%;
   right: 1%;
-  width: 30%;
+  width: 25%;
 }
 
 .box:hover .p {
@@ -85,7 +81,6 @@
   background: url("../images/wave (6) main.svg");
   background-size: cover;
   opacity: 1;
-  color: #0f141a;
 }
 .aboutSection {
   position: relative;
@@ -93,13 +88,19 @@
   z-index: 1;
 }
 
-.ityped {
-  color: white;
+.textResume{
   position: absolute;
-  left: 10%;
+  left: 15%;
   bottom: 20%;
 }
 
+.ityped {
+  color: white;
+  
+}
+.resume{
+  text-align: left;
+}
 @media only screen and (max-width: 500px) {
   .nav {
     top: 10%;
@@ -114,6 +115,12 @@
     content: '  Longer and Hold';
     color: white;
     margin-top: 0px;
+  }
+  .textResume{
+    left: 10%;
+  }
+  .scrollbtn{
+    left: 40%;
   }
 }
 

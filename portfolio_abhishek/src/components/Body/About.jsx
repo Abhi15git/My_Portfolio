@@ -4,6 +4,7 @@ import KUTE from "kute.js";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Contact from "./contact";
+import { Button } from "@material-ui/core";
 
 export const About = ({ prop, wheelEvent }) => {
   useEffect(() => {
@@ -71,9 +72,11 @@ export const About = ({ prop, wheelEvent }) => {
           </p>
         </section>
         <section>
-          <h3 className={styles.resume}>
+
+          <Button variant="contained" color="primary"> My Resume &nbsp;&nbsp; <i class="fas fa-download"></i></Button>
+          {/* <h3 className={styles.resume}>
             My Resume <i class="fas fa-download"></i>
-          </h3>
+          </h3> */}
         </section>
         <section className={styles.techSection}>
           <h1 className={styles.subHead}>Proficiencies</h1>
@@ -279,9 +282,9 @@ export const About = ({ prop, wheelEvent }) => {
         </section>
       </div>
 
-      <div className={styles.waveSecondary}>
+      {/* <div className={styles.waveSecondary}>
         <div></div>
-      </div>
+      </div> */}
 
       <div id="project">
         <Projects />

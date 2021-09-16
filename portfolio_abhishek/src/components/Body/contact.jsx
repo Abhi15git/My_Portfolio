@@ -31,7 +31,7 @@ const Contact = () => {
           </div>
           <div>
             <a href="/">
-              <PhoneIcon style={{ color: "white" }} /> &nbsp;&nbsp;+917983185957
+              <PhoneIcon style={{ color: "white" }} />+917983185957
             </a>
           </div>
         </section>

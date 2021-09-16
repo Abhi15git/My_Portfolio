@@ -6,11 +6,16 @@
 .head {
   color: white;
   font-size: 15vh;
-  margin-top: 100px;
+  margin-top: 200px;
+}
+.subHead {
+  font-size: 10vh;
+  color: white;
+  text-align: left;
 }
 .projectContainer section {
   width: 70%;
-  margin: 20vh auto 0 auto;
+  margin: auto;
 }
 
 .project img {
@@ -25,7 +30,7 @@
 
 .projectList {
   display: grid;
-  grid-template-columns: 50% auto;
+  grid-template-columns: auto;
   grid-gap: 20px;
   padding: 10px;
 }
@@ -35,7 +40,9 @@
   overflow: hidden;
   width: 90%;
   text-align: left;
-  box-shadow: 4px 4px 8px black;
+  box-shadow: 2px 2px 7px black;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .project:hover img {
@@ -46,7 +53,6 @@
 
 .siteName {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.315);
   z-index: 10;
   text-align: center;
   width: 100%;
@@ -60,17 +66,28 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.473);
 }
+.image{
+  position: relative;
+  overflow: hidden;
+}
 .description {
   width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.137);
 }
 .description p {
   color: rgb(242, 252, 103);
-  transition: opacity 0.3s ease-in;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  padding: 10px;
+  text-align: center;
 }
 .links {
   text-align: right;
   width: 50%;
-  height: 50px;
+  height: fit-content;
   background-color: rgba(0, 0, 0, 0.638);
   color: white;
   z-index: 10;
@@ -82,29 +99,24 @@
 }
 
 .project a {
-  padding: 15px;
-  color: rgb(192, 192, 192);
+  padding: 35px;
+  color: rgb(113,93,242);
 }
 
 .project:hover {
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.774);
+  box-shadow: 2px 2px 6px rgb(146, 132, 241);
   cursor: pointer;
 }
 
-.project:hover .siteName {
-  background-color: transparent;
-}
 
-.project:hover .description p {
-  opacity: 0;
-}
+
 .project a:hover {
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
 .linksR {
   width: 50%;
-  height: 50px;
+  height: fit-content;
   background-color: rgba(0, 0, 0, 0.638);
   color: white;
   z-index: 10;
@@ -130,6 +142,12 @@
     font-size: 7vh;
   }
   .projectList {
-    grid-template-columns: 110%;
+    grid-template-columns: 100%;
+  }
+  .project{
+    grid-template-columns: auto;
+  }
+  .subHead {
+    font-size: 5vh;
   }
 }

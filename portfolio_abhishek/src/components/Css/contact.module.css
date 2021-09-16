@@ -7,7 +7,7 @@
 .head {
   color: white;
   font-size: 15vh;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 .subHead {
   font-size: 10vh;
@@ -56,5 +56,8 @@ h1 {
   }
   .subHead {
     font-size: 5vh;
+  }
+  .platforms a{
+    font-size: small;
   }
 }
