@@ -45,6 +45,9 @@ const Main = () => {
 
   useEffect(() => {
     wheelEvent();
+
+    window.addEventListener('keydown',(event)=>{if(event.key==="Tab") event.preventDefault()},false)
+
     let touchstart;
     window.addEventListener(
       "touchstart",
