@@ -57,10 +57,10 @@ let touchstart ;
       "touchmove",
       (event) => {
         console.log(event.touches[0].clientY);
-        if(touchstart-event.touches[0].clientY>250){
+        if(touchstart-event.touches[0].clientY>200){
           setTranslate(1);
         }
-        else if(touchstart-event.touches[0].clientY<-250)
+        else if(touchstart-event.touches[0].clientY<-200)
         setTranslate(0);
       },
       false
