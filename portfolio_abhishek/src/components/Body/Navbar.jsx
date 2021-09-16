@@ -4,7 +4,7 @@ import blackcat from "../images/blackcat.svg";
 
 const NavBox = styled.div`
 
-
+background-color: rgb(32,39,49);
   position: absolute;
   z-index: 10;
   top: 5%;
@@ -19,12 +19,10 @@ const NavBox = styled.div`
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   overflow: visible;
-  transform: translateX(90%);
+  transform: translateX(0%);
   transition: transform 0.5s ease;
-  &:hover{
-       transform: translateX(0%);
        box-shadow:-2px 2px 5px rgb(113,93,242);
-  }
+  
   &:hover :nth-child(2) span{
     display: none;
   }
@@ -93,6 +91,7 @@ const Navlist = styled.div`
 `;
 
 const Hoverme = styled.div`
+display: none;
   position: absolute;
   top: 105%;
   transform: translateX(-20px);
