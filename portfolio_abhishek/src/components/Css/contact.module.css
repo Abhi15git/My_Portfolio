@@ -35,10 +35,12 @@ h1 {
 }
 
 .platforms div {
-  color: red;
+  width: fit-content;
   margin: 40px 0;
   cursor: pointer;
   font-size: larger;
+  display: flex;
+  align-items: center;
   transition: transform 0.3s ease-in-out;
 }
 

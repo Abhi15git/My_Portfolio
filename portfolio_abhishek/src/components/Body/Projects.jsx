@@ -26,7 +26,7 @@ const Projects = () => {
           </div>
           <div className={styles.description}>
           <div className={styles.links}>
-              <a>
+              <a href="https://focused-hugle-5e836d.netlify.app/">
                 <OpenInBrowserIcon fontSize="large"/>
               </a>
             </div>
@@ -59,7 +59,7 @@ const Projects = () => {
 
           <div className={styles.description}>
           <div className={styles.links}>
-            <a>
+            <a href="https://drive.google.com/file/d/10TXGyObg9NbCsZpNoPqHhL9qc-tjvLpm/view?usp=sharing">
             <OpenInBrowserIcon fontSize="large"/>
             </a>
           </div>
@@ -94,7 +94,7 @@ const Projects = () => {
 
           <div className={styles.description}>
           <div className={styles.links}>
-            <a>
+            <a href="https://drive.google.com/file/d/10XIrWq3wwmWooCOYFORXmtNyHKLTeMO8/view?usp=sharing">
               
             <OpenInBrowserIcon fontSize="large"/>
             </a>
