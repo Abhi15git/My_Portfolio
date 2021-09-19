@@ -15,19 +15,33 @@ const Contact = () => {
         <section className={styles.platforms}>
           <div>
             <i class="far fa-envelope-open"></i>
-            <a href="mailto: 9528442373.as@gmail.com">
+            <a
+              href="mailto: 9528442373.as@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               &nbsp;&nbsp;9528442373.as@gmail.com
             </a>
           </div>
           <div>
             <i class="fab fa-linkedin-in"></i>
-            <a href="https://www.linkedin.com/in/abhi15linkin/">
+            <a
+              href="https://www.linkedin.com/in/abhi15linkin/"
+              target="_blank"
+              rel="noreferrer"
+            >
               &nbsp;&nbsp;Linkedin
             </a>
           </div>
           <div>
             <i class="devicon-github-original"></i>
-            <a href="https://www.github.com/Abhi15git/">&nbsp;&nbsp;GitHub</a>
+            <a
+              href="https://www.github.com/Abhi15git/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              &nbsp;&nbsp;GitHub
+            </a>
           </div>
           <div>
             <PhoneIcon

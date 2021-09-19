@@ -7,6 +7,7 @@ import Contact from "./contact";
 import { Button } from "@material-ui/core";
 import GitHubCalendar from 'react-github-calendar';
 import ReactTooltip from 'react-tooltip';
+import resume from '../Resume/abhishek-resume.pdf'
 
 export const About = ({ prop, wheelEvent }) => {
   useEffect(() => {
@@ -83,7 +84,7 @@ export const About = ({ prop, wheelEvent }) => {
         </section>
         <section>
 
-          <Button variant="contained" color="primary"> My Resume &nbsp;&nbsp; <i class="fas fa-download"></i></Button>
+          <Button variant="contained" color="primary"><a  href={resume} target="_blank" rel="noreferrer" style={{color:"white",textDecoration:"none"}}>Resume</a></Button>
           {/* <h3 className={styles.resume}>
             My Resume <i class="fas fa-download"></i>
           </h3> */}

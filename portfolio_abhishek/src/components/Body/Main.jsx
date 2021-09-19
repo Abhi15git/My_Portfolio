@@ -7,6 +7,7 @@ import { throttle } from "lodash";
 import TouchAppIcon from "@material-ui/icons/TouchApp";
 import { init } from "ityped";
 import { Button } from "@material-ui/core";
+import resume from "../Resume/abhishek-resume.pdf";
 
 const Container = Styled.div`
 height:100vh;
@@ -50,7 +51,7 @@ const Main = () => {
       "keydown",
       (event) => {
         if (event.key === "Tab") event.preventDefault();
-      else if(event.key==="ArrowDown")setTranslate(1);
+        else if (event.key === "ArrowDown") setTranslate(1);
       },
       false
     );
@@ -118,17 +119,51 @@ const Main = () => {
               <span ref={textRef}></span>
             </h3>
             <br />
-            <h3 className={styles.resume}>
+            <h3
+              className={styles.resume}
+              onClick={() => console.log("clicked")}
+            >
               <Button
                 variant="contained"
                 color="primary"
                 style={{ backgroundColor: "#aa281c" }}
               >
-                {" "}
-                My Resume &nbsp;&nbsp; <i class="fas fa-download"></i>
+                <a
+                  href={resume}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: "white", textDecoration: "none" }}
+                >
+                  Resume
+                </a>
               </Button>
             </h3>
           </div>
+
+          <div className={styles.social}>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/abhi15linkin/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="devicon-linkedin-plain"></i>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.github.com/Abhi15git/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="devicon-github-original"></i>
+              </a>
+            </div>
+            <div>
+              <i class="devicon-twitter-original"></i>
+            </div>
+          </div>
+
           <div className={styles.scrollbtn}>
             <TouchAppIcon />
             <h3>Scroll Up</h3>

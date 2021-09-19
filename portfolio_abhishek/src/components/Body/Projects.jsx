@@ -5,6 +5,7 @@ import instahyre from "../images/instahyre.png";
 import coastal from "../images/coastal.png";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import OpenInBrowserIcon from '@material-ui/icons/OpenInBrowser';
+import { Button } from "@material-ui/core";
 
 const Projects = () => {
   return (
@@ -22,12 +23,14 @@ const Projects = () => {
             
 
             <img src={lenskart} alt="" />
+            
            
           </div>
           <div className={styles.description}>
           <div className={styles.links}>
-              <a href="https://focused-hugle-5e836d.netlify.app/">
-                <OpenInBrowserIcon fontSize="large"/>
+              <a href="https://focused-hugle-5e836d.netlify.app/" target="_blank"
+                  rel="noreferrer">
+                <Button variant="contained" color="primary"  size="small">Demo &nbsp;<OpenInBrowserIcon fontSize="medium"/></Button>
               </a>
             </div>
             <div className={styles.siteName}>
@@ -38,10 +41,15 @@ const Projects = () => {
               truckloads of relentless passion to make a difference in this
               world, Lenskart is India's fastest growing eyewear business today.
             </p>
+            <div className={styles.projectTech}>
+              <p><b>HTML, CSS, JavaScript</b>
+              </p>
+            </div>
             <div className={styles.linksR}>
-              <a href="https://github.com/Abhi15git/LensKart">
-                <GitHubIcon fontSize="large"/>
+              <a href="https://github.com/Abhi15git/LensKart" target="_blank"
+                  rel="noreferrer">
                
+                <Button variant="contained" color="primary" size="small"> <GitHubIcon fontSize="medium"/> &nbsp; Code</Button>
               </a>
             </div>
           </div>
@@ -54,13 +62,14 @@ const Projects = () => {
          
 
           <img src={instahyre} alt="" />
-         
+          
          </div>
 
           <div className={styles.description}>
           <div className={styles.links}>
-            <a href="https://drive.google.com/file/d/10TXGyObg9NbCsZpNoPqHhL9qc-tjvLpm/view?usp=sharing">
-            <OpenInBrowserIcon fontSize="large"/>
+            <a href="https://drive.google.com/file/d/10TXGyObg9NbCsZpNoPqHhL9qc-tjvLpm/view?usp=sharing" target="_blank"
+                  rel="noreferrer">
+            <Button variant="contained" color="primary"  size="small">Demo &nbsp;<OpenInBrowserIcon fontSize="medium"/></Button>
             </a>
           </div>
           <div className={styles.siteName}>
@@ -74,9 +83,14 @@ const Projects = () => {
                 effortlessly. Instead of having to waste hours on applying
                 filters to search...
               </p>
+              <div className={styles.projectTech}>
+              <p><b>HTML, CSS, JavaScript, React, M-UI</b>
+              </p>
+            </div>
               <div className={styles.linksR}>
-            <a href="https://github.com/Abhi15git/Instahyre">
-              <GitHubIcon fontSize="large" />
+            <a href="https://github.com/Abhi15git/Instahyre" target="_blank"
+                  rel="noreferrer">
+            <Button variant="contained" color="primary"  size="small"> <GitHubIcon fontSize="medium"/> &nbsp; Code</Button>
             </a>
           </div>
             </div>
@@ -88,15 +102,15 @@ const Projects = () => {
          
 
           <img src={coastal} alt="" />
-         
+          
 
          </div>
 
           <div className={styles.description}>
           <div className={styles.links}>
-            <a href="https://drive.google.com/file/d/10XIrWq3wwmWooCOYFORXmtNyHKLTeMO8/view?usp=sharing">
-              
-            <OpenInBrowserIcon fontSize="large"/>
+            <a href="https://drive.google.com/file/d/10XIrWq3wwmWooCOYFORXmtNyHKLTeMO8/view?usp=sharing" target="_blank"
+                  rel="noreferrer">
+            <Button variant="contained" color="primary"  size="small">Demo &nbsp;<OpenInBrowserIcon fontSize="medium"/></Button>
             </a>
           </div>
           <div className={styles.siteName}>
@@ -110,10 +124,14 @@ const Projects = () => {
                 public. Every Coastal Inn offers a comfortable place to stay, a
                 convenient location and... 
               </p>
+              <div className={styles.projectTech}>
+              <p><b>HTML, CSS, JavaScript, React, M-UI</b>
+              </p>
+            </div>
               <div className={styles.linksR}>
-            <a href="https://github.com/Abhi15git/CoastalInn-Clone">
-              <GitHubIcon fontSize="large" />
-              
+            <a href="https://github.com/Abhi15git/CoastalInn-Clone" target="_blank"
+                  rel="noreferrer">
+            <Button variant="contained" color="primary"  size="small"> <GitHubIcon fontSize="medium"/> &nbsp; Code</Button>
             </a>
           </div>
             </div>
