@@ -3,6 +3,7 @@ import styles from "../Css/projects.module.css";
 import lenskart from "../images/lenskart.png";
 import instahyre from "../images/instahyre.png";
 import coastal from "../images/coastal.png";
+import sudoku from "../images/sudoku.png"
 import GitHubIcon from "@material-ui/icons/GitHub";
 import OpenInBrowserIcon from '@material-ui/icons/OpenInBrowser';
 import { Button } from "@material-ui/core";
@@ -22,7 +23,7 @@ const Projects = () => {
           <div className={styles.image}>
             
 
-            <img src={lenskart} alt="" />
+            <img src={sudoku} alt="" />
             
            
           </div>
