@@ -18,6 +18,46 @@ const Projects = () => {
       <section className={styles.projectList}>
 
 
+      <div className={styles.project}>
+          <div className={styles.image}>
+            
+
+            <img src={lenskart} alt="" />
+            
+           
+          </div>
+          <div className={styles.description}>
+          <div className={styles.links}>
+              <a href="https://sudoku-by-abhishek.netlify.app/" target="_blank"
+                  rel="noreferrer">
+                <Button variant="contained" color="primary"  size="small">Demo &nbsp;<OpenInBrowserIcon fontSize="medium"/></Button>
+              </a>
+            </div>
+            <div className={styles.siteName}>
+              <h3>Sudoku Solver</h3>
+            </div>
+            <p>
+              Simple Grindola Sudoku solver UI which provides the solutions for
+              all ordinary 9x9 sudoku problems. Slow mode available to observe the
+              solution on the fly.
+            </p>
+            <div className={styles.projectTech}>
+              <p><b>HTML, CSS, JavaScript, React</b>
+              </p>
+            </div>
+            <div className={styles.linksR}>
+              <a href="https://github.com/Abhi15git/Sudoku" target="_blank"
+                  rel="noreferrer">
+               
+                <Button variant="contained" color="primary" size="small"> <GitHubIcon fontSize="medium"/> &nbsp; Code</Button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+
         <div className={styles.project}>
           <div className={styles.image}>
             
