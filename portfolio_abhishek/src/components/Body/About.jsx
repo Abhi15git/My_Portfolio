@@ -5,9 +5,9 @@ import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Contact from "./contact";
 import { Button } from "@material-ui/core";
-import GitHubCalendar from 'react-github-calendar';
-import ReactTooltip from 'react-tooltip';
-import resume from '../Resume/abhishek-resume.pdf'
+import GitHubCalendar from "react-github-calendar";
+import ReactTooltip from "react-tooltip";
+import resume from "../Resume/abhishek-resume.pdf";
 
 export const About = ({ prop, wheelEvent }) => {
   useEffect(() => {
@@ -61,7 +61,7 @@ export const About = ({ prop, wheelEvent }) => {
     ).start();
 
     return () => {
-      console.log('return',x)
+      console.log("return", x);
       clearTimeout(x);
     };
   }, []);
@@ -83,8 +83,16 @@ export const About = ({ prop, wheelEvent }) => {
           </p>
         </section>
         <section>
-
-          <Button variant="contained" color="primary"><a  href={resume} target="_blank" rel="noreferrer" style={{color:"white",textDecoration:"none"}}>Resume</a></Button>
+          <Button variant="contained" color="primary">
+            <a
+              href={resume}
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              Resume
+            </a>
+          </Button>
           {/* <h3 className={styles.resume}>
             My Resume <i class="fas fa-download"></i>
           </h3> */}
@@ -290,11 +298,9 @@ export const About = ({ prop, wheelEvent }) => {
               </svg>
             </div>
 
-
-
             <div>
               <div>
-              <i class="devicon-github-original"></i>
+                <i class="devicon-github-original"></i>
                 <p>GitHub</p>
               </div>
               <svg
@@ -324,18 +330,18 @@ export const About = ({ prop, wheelEvent }) => {
                 </g>
               </svg>
             </div>
-
-
           </div>
         </section>
 
-       <section>
-         <h1 className={styles.subHead}>GitHub Graph</h1>
+        <section>
+          <h1 className={styles.subHead}>GitHub Graph</h1>
           <div>
-            <GitHubCalendar  username="abhi15git" children={<ReactTooltip html/>}/>
+            <GitHubCalendar
+              username="abhi15git"
+              children={<ReactTooltip html />}
+            />
           </div>
-       </section>
-
+        </section>
       </div>
 
       {/* <div className={styles.waveSecondary}>
