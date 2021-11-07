@@ -12,7 +12,7 @@ import { Button } from "@material-ui/core";
 const Projects = () => {
   return (
     <div className={styles.projectContainer}>
-      <p className={styles.head}>Few things I have build!</p>
+      <p className={styles.head}>Few things I have built!</p>
       <section>
         <h1 className={styles.subHead}>Projects</h1>
       </section>
