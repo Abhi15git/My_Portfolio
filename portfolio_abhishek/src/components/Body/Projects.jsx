@@ -3,6 +3,7 @@ import styles from "../Css/projects.module.css";
 import lenskart from "../images/lenskart.png";
 import instahyre from "../images/instahyre.png";
 import freeschool from "../images/freeschool.png"
+import tumblr from "../images/tumblr.png"
 import coastal from "../images/coastal.png";
 import sudoku from "../images/sudoku.png";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -18,6 +19,51 @@ const Projects = () => {
       </section>
 
       <section className={styles.projectList}>
+
+      <div className={styles.project}>
+          <div className={styles.image}>
+            <img src={tumblr} alt="" />
+          </div>
+          <div className={styles.description}>
+            <div className={styles.links}>
+              <a
+                href="https://tumblrclone.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button variant="contained" color="primary" size="small">
+                  Demo &nbsp;
+                  <OpenInBrowserIcon fontSize="medium" />
+                </Button>
+              </a>
+            </div>
+            <div className={styles.siteName}>
+              <h3>Tumblr.com</h3>
+            </div>
+            <p>
+            Tumblr is an American microblogging and social networking website founded in 2007. The service allows users to post multimedia and other content to a short-form blog.
+            </p>
+            <div className={styles.projectTech}>
+              <p>
+                <b>JavaScript, React,HTML, CSS, MongoDB, Express, Mongoose, Server Sent Events and UI Libraries</b>
+              </p>
+            </div>
+            <div className={styles.linksR}>
+              <a
+                href="https://github.com/Abhi15git/tumblr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button variant="contained" color="primary" size="small">
+                  {" "}
+                  <GitHubIcon fontSize="medium" /> &nbsp; Code
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
         <div className={styles.project}>
           <div className={styles.image}>
             <img src={freeschool} alt="" />
